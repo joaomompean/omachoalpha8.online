@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8JPQ6P');</script>
+<!-- End Google Tag Manager -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Carregando Conteúdo...</title>
+<meta name="description" content="🏆 Deixe sua peba enorme!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Asura - Site Oficial">
+<meta property="og:description" content="🏆 Deixe sua peba enorme!">
+<meta property="og:image" content="/arquivo-geral/img/thumb.jpg">
+<link rel="shortcut icon" href="/arquivo-geral/img/favicon.webp">
+<link rel="icon" type="image/webp" href="/arquivo-geral/img/favicon.webp">
+<link rel="icon" href="/arquivo-geral/img/favicon.webp" sizes="32x32">
+<link rel="icon" href="/arquivo-geral/img/favicon.webp" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="/arquivo-geral/img/favicon.webp">
+<meta name="msapplication-TileImage" content="/arquivo-geral/img/favicon.webp">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex,follow">
+<style>  * {
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.botoes {
+  margin-top: 40px;
+  height: 50px;
+}
+
+.button {
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 7.0+ */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  width: 290px;
+  margin: auto;
+  padding: 30px 0;
+  background-color: #00b90f; /*cor do botao */
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  border: 1px solid #6eff00;  
+}
+.button:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #2acc37; /* cor que preenche */
+}
+.button, span {
+  position: absolute;
+  line-height: 0;
+}
+.button span i {
+  transform-origin: center center;
+}
+.button span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button span:nth-of-type(2) {
+  top: 100%;
+  transform: translateY(0%);
+  font-size: 24px;
+}
+.button span:nth-of-type(3) {
+  display: none;
+}
+
+
+
+.active {
+  background-color: #00b90f; /* cor do fundo enquanto preenche */
+}
+.active:before {
+  width: 100%;
+  transition: width 3s linear;
+}
+.active span:nth-of-type(1) {
+  top: -100%;
+  transform: translateY(-50%);
+}
+.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.active span:nth-of-type(2) i {
+  animation: loading 500ms linear infinite;
+}
+.active span:nth-of-type(3) {
+  display: none;
+}
+
+.finished {
+  background-color: #2acc37; /*cor do fundo depois que preencheu */
+}
+.finished .submit {
+  display: none;
+}
+.finished .loading {
+  display: none;
+}
+.finished .check {
+  display: block !important;
+  font-size: 24px;
+  animation: scale 0.5s linear;
+}
+.finished .check i {
+  transform-origin: center center;
+}
+
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(10);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.button2 {
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: center; /* Safari 7.0+ */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  width: 290px;
+  margin: auto;
+  padding: 30px 0;
+  background-color: #9a0000; /*cor do botao */
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -1px;  
+  text-transform: uppercase;
+  overflow: hidden;
+  border: 1px solid #ff0000;
+}
+.button2:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #bd0000; /* cor que preenche */
+} 
+.button2, span {
+  position: absolute;
+  line-height: 0;
+}
+.button2 span i {
+  transform-origin: center center;
+}
+.button2 span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button2 span:nth-of-type(2) {
+  top: 100%;
+  transform: translateY(0%);
+  font-size: 24px;
+}
+.button2 span:nth-of-type(3) {
+  display: none;
+}
+
+.active2 {
+  background-color: #9a0000; /* cor do fundo enquanto preenche */
+}
+.active2:before {
+  width: 100%;
+  transition: width 3s linear;
+}
+.active2 span:nth-of-type(1) {
+  top: -100%;
+  transform: translateY(-50%);
+}
+.active2 span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.active2 span:nth-of-type(2) i {
+  animation: loading2 500ms linear infinite;
+}
+.active2 span:nth-of-type(3) {
+  display: none;
+}
+
+.finished2 {
+  background-color: #bd0000; /*cor do fundo depois que preencheu */
+}
+.finished2 .submit2 {
+  display: none;
+}
+.finished2 .loading2 {
+  display: none;
+}
+.finished2 .check2 {
+  display: block !important;
+  font-size: 24px;
+  animation: scale 0.5s linear;
+}
+.finished2 .check2 i {
+  transform-origin: center center;
+}
+
+
+@keyframes loading2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(10);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 72px;
+    color: #f5f5f5;
+}
+
+h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Open sans', arial, helvetica, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 5px 0 20px;
+}
+
+.principal {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    display: table;
+    padding-bottom: 20px;
+    background-color: #000;
+    background: linear-gradient(45deg, black, #130000, #EB0000);
+}
+
+.confirmado {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    display: table;
+    padding-bottom: 20px;
+    background-color: #000;  
+    background: linear-gradient(45deg, black, #002546, #0080cc);
+}
+
+.topo {
+    width: 100%;
+    text-align: center;
+    letter-spacing: -2px;
+    margin: 0 0 20px;
+}
+
+.titulo-de-perguntas {
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+.titulo-de-perguntas h2 {
+    font-size: 28px;
+}
+
+.perguntas {
+    margin: auto;
+    display: table;
+    margin-top: 0px;
+    margin-bottom: 600px;
+}
+
+.rodape-copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+}
+
+.rodape-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+}
+
+.rodape-links a {
+    color: #ccc;
+}
+
+.rodape-links a:hover {
+    color: #FF1616;
+}
+
+.rodape-aviso {
+    width: 100%;
+    text-align: center;
+    margin-top: 9px;
+    font-size: 9px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+}
+
+.rodape-aviso a {
+    color: #ccc;
+}
+
+.center {
+    width: 290px;
+}
+
+    p,
+    .single-post-content li,
+    #content_area li,
+    .op-popup-button .default-button {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        color: #303030
+    }
+
+    a,
+    blockquote {
+        font-family: Arial, sans-serif
+    }
+
+    a,
+    a:visited {
+        text-decoration: none
+    }
+
+    a:hover {
+        text-decoration: none
+    }
+
+    .footer {
+        background: #030303;
+        background: -moz-linear-gradient(top, #030303 0%, #030303 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #030303), color-stop(100%, #030303));
+        background: -webkit-linear-gradient(top, #030303 0%, #030303 100%);
+        background: -o-linear-gradient(top, #030303 0%, #030303 100%);
+        background: -ms-linear-gradient(top, #030303 0%, #030303 100%);
+        background: linear-gradient(top, #030303 0%, #030303 100%));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#030303', endColorstr='#030303', GradientType=0)
+    }
+
+    .footer-navigation ul li a {
+        text-decoration: none
+    }
+
+    .footer-navigation ul li a:hover {
+        text-decoration: none
+    }
+
+    .footer a {
+        text-decoration: none
+    }
+
+    .footer a:hover {
+        text-decoration: none
+    }
+
+    .footer small.footer-copyright a {
+        text-decoration: none
+    }
+
+    .footer small.footer-copyright a:hover {
+        text-decoration: none
+    }
+
+    .footer small.footer-disclaimer a {
+        text-decoration: none
+    }
+
+    .footer small.footer-disclaimer a:hover {
+        text-decoration: none
+    }
+
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.8s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale_check .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.5s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale_check {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 100px #7ac142;
+  }
+}    </style>
+</head>
+<body onselectstart="return false" ondragstart="return false" oncontextmenu="return false" oncopy="return false">
+<div class="confirmado">
+<div class="titulo-de-perguntas">
+<h2 style="color: #ffffff; font-size: 38px;">CONTEÚDO LIBERADO!</h2>
+<div style="width: 250px; margin: 30px auto;">
+<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+</svg>
+</div>
+<h2 style="color: #ffffff; font-weight: 300;">PARA CONTINUAR, POR FAVOR</h2>
+<h2 style="color: #ffffff; font-size: 22px;">APERTE NO BOTÃO ABAIXO</h2>
+
+<div class="perguntas">
+<div class="center">
+<div class="botoes">
+<a id='botaoproximo' href=''>
+<button class="button">
+<span class="submit">ACESSAR AGORA 🔓</span>
+<span class="loading"><i class="fa fa-refresh"></i></span>
+<span class="check"><i class="fa fa-check"></i></span>
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="rodape-copy">© 2022 - TODOS OS DIREITOS RESERVADOS</div>
+<div class="rodape-links"><a href="/termos/">Termos de Uso</a> | <a href="/privacidade/">Política de Privacidade</a> </div>
+<div class="rodape-aviso"><a href="">Os produtos e servi&ccedil;os neste site n&atilde;o devem ser interpretados 
+como uma promessa ou garantia de resultados. Seu n&iacute;vel de sucesso em alcan&ccedil;ar os resultados divulgados com o uso de nossos produtos e 
+informa&ccedil;&otilde;es depende do tempo que voc&ecirc; dedica ao programa, t&eacute;cnicas utilizadas, conhecimento e habilidades diferentes. 
+Como esses fatores diferem entre cada indiv&iacute;duo, n&atilde;o podemos garantir o sucesso ou o n&iacute;vel de resultado, nem somos respons&aacute;veis 
+por qualquer de suas a&ccedil;&otilde;es. Todas e quaisquer declara&ccedil;&otilde;es prospectivas contidas neste site ou em qualquer um de nossos produtos 
+destinam-se a expressar a nossa opini&atilde;o sobre os resultados potenciais que algumas pessoas podem alcan&ccedil;ar. N&oacute;s n&atilde;o compartilharemos
+ seus dados com ningu&eacute;m. Essa p&aacute;gina/produto n&atilde;o tem vinculo com o Google ou Facebook.</a></div>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8JPQ6P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrParam = urlParams.get('src');
+    if(scrParam){
+    const proximoBtn = document.getElementById('botaoproximo');
+    proximoBtn.href = 'pvfb.html?scr=' + scrParam;
+    } else{
+    const proximoBtn = document.getElementById('botaoproximo');
+    proximoBtn.href = 'pvfb.html';
+    }
+  </script>
+
+
+
+</body>
+	<script type="text/javascript" src="/arquivos/tracker.js"></script>
+<link rel="stylesheet" href="/arquivos/942865.css" type="text/css" media="all">
+<script type="text/javascript" src="/arquivos/block.js"></script>
+<script type="text/javascript" src="/arquivos/location.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src='https://use.fontawesome.com/2473308824.js'></script>
+<script src="/arquivo-geral/index/botao.js"></script>
+<link href="/arquivo-geral/css/botao-pulse.css" rel="stylesheet" type="text/css">
+</html>
